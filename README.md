@@ -10,7 +10,7 @@ This repository serves as a record of my progress in learning Python.
 
 Estou inscrito no curso "Python 3 - Do Zero ao Avançado" na Udemy.
 /
-I am enrolled in the "Python 3 - From Zero to Advanced" course on Udemy.
+I am enrolled in the "Python 3 - From Zero to Advanced" course on Udemy; (Avaible only in portuguese)
 
 **Link do Curso / Course Link**: [Python 3 - Do Zero ao Avançado](https://www.udemy.com/course/python-3-do-zero-ao-avancado/)
 
