@@ -28,7 +28,7 @@ A estrutura deste repositório reflete a organização dos tópicos abordados no
 /
 The structure of this repository reflects the organisation of the topics covered in the Exercism exercises.
 
-📂`Python/`:
+📂`PYTHON/`:
 
 ├── 📂 `01_Basics/`   
 
