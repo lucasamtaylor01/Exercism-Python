@@ -36,7 +36,13 @@ The structure of this repository reflects the organisation of the topics covered
 
 ├── 📂 `03_Bools/`
 
-└── 📂 `04_Conditionals/`  
+├── 📂 `04_Conditionals/`
+
+├── 📂 `05_Strings/`
+
+├── 📂 `06_Comparisons/`
+
+└── 📂 `07_Sring_Methods/`  
 
 ## 💡 Contribuições / Contributions
 
