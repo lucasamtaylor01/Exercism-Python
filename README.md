@@ -42,9 +42,11 @@ The structure of this repository reflects the organisation of the topics covered
 
 ├── 📂 `06_Comparisons/`
 
-├── 📂 `07_Sring_Methods/`  
+├── 📂 `07_Sring_Methods/` 
 
-└── 📂 `08_Lists/`  
+├── 📂 `08_Lists/` 
+
+└── 📂 `09_Loops/` 
 
 ## 💡 Contribuições / Contributions
 
