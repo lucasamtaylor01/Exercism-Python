@@ -6,7 +6,11 @@ def prime(number):
     
     :param number: A posição do número primo desejado.
     :return: O enésimo número primo.
+    :raises ValueError: Se a posição do número primo for menor que 1.
     """
+    if number == 0:
+        raise ValueError("there is no zeroth prime")
+    
     i = 2
     prime_counter = 0
     
