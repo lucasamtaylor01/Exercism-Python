@@ -2,14 +2,14 @@ import math
 
 def prime(number):
     """
-    Retorna o enésimo número primo.
+    Returns the nth prime number.
     
-    :param number: A posição do número primo desejado.
-    :return: O enésimo número primo.
-    :raises ValueError: Se a posição do número primo for menor que 1.
+    :param number: The position of the desired prime number.
+    :return: The nth prime number.
+    :raises ValueError: If the position of the prime number is less than 1.
     """
     if number == 0:
-        raise ValueError("there is no zeroth prime")
+        raise ValueError("There is no zeroth prime")
     
     i = 2
     prime_counter = 0
@@ -23,10 +23,10 @@ def prime(number):
     
 def isprime(number):
     """
-    Verifica se um número é primo.
+    Checks if a number is prime.
     
-    :param number: O número a ser verificado.
-    :return: True se o número for primo, False caso contrário.
+    :param number: The number to be checked.
+    :return: True if the number is prime, False otherwise.
     """
     if number < 2:
         return False

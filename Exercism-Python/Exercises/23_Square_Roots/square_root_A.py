@@ -1,4 +1,10 @@
 def factorization(n):
+    """
+    Perform the prime factorization of a given integer.
+
+    :param n: An integer to be factorized.
+    :return: A list of prime factors of the given integer.
+    """
     factorization_list = []
     i = 2
     while n != 1:
@@ -6,11 +12,17 @@ def factorization(n):
             factorization_list.append(i)
             n = n // i
         else:
-            i+=1
+            i += 1
 
     return factorization_list
 
 def perfect_square(n):
+    """
+    Determine if a given integer is a perfect square.
+
+    :param n: An integer to check for being a perfect square.
+    :return: True if the integer is a perfect square, False otherwise.
+    """
     factors = factorization(n)
 
     i = 0
@@ -28,6 +40,12 @@ def perfect_square(n):
     return True
 
 def perfect_square_root(n):
+    """
+    Calculate the square root of a perfect square.
+
+    :param n: An integer that is a perfect square.
+    :return: The integer square root of the perfect square.
+    """
     factors = factorization(n)
     root_factors = []
     for i in range(len(factors)):
@@ -36,38 +54,53 @@ def perfect_square_root(n):
 
     root = 1
     for i in range(len(root_factors)):
-        root*=root_factors[i]
+        root *= root_factors[i]
     
     return root
 
 def foward_perfect_square(n):
-    i = n+1
+    """
+    Find the next perfect square greater than a given integer.
+
+    :param n: An integer to find the next perfect square.
+    :return: The next perfect square greater than the given integer.
+    """
+    i = n + 1
     while True:
         if perfect_square(i):
             return i
         else:
-            i+=1
+            i += 1
 
 def previous_perfect_square(n):
-    i = n-1
+    """
+    Find the previous perfect square less than a given integer.
+
+    :param n: An integer to find the previous perfect square.
+    :return: The previous perfect square less than the given integer.
+    """
+    i = n - 1
     while True:
         if perfect_square(i):
             return i
         else:
-            i-=1
+            i -= 1
 
 def square_root(n):
-    foward_square = perfect_square_root(foward_perfect_square(n))
-    previuos_square = perfect_square_root(previous_perfect_square(n))
+    """
+    Approximate the square root of a given integer.
 
-    a = (foward_square + previuos_square) /2
+    :param n: An integer to approximate the square root.
+    :return: The approximate square root of the given integer.
+    """
+    foward_square = perfect_square_root(foward_perfect_square(n))
+    previous_square = perfect_square_root(previous_perfect_square(n))
+
+    a = (foward_square + previous_square) / 2
     b = n / a
     counter = 0
     while counter < 10**4:
-        a = (a+b)/2
+        a = (a + b) / 2
         b = n / a
-        counter+=1
+        counter += 1
     return b
-
-        
-print(square_root(121))

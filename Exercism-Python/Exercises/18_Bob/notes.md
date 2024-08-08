@@ -49,15 +49,14 @@ def response(hey_bob):
 **Comments**
 
 1. 24/25 tests passed;
-2.  More clear
+2. More clear
 
 Let's organize the functions that I didn't know before:
 
-1. `strip()`: String specifying the set of characters to be removed. If omitted or None, the chars argument defaults to removing whitespace. 
+1. `strip()`: String specifying the set of characters to be removed. If omitted or None, the chars argument defaults to removing whitespace.
 
-    *Reference:* https://python-reference.readthedocs.io/en/latest/docs/str/strip.html
+    *Reference:* <https://python-reference.readthedocs.io/en/latest/docs/str/strip.html>
 
 2. `endswith("?")`: Returns a Boolean stating whether a string ends with the specified suffix.
 
-    *Reference:* https://python-reference.readthedocs.io/en/latest/docs/str/endswith.html
-    
+    *Reference:* <https://python-reference.readthedocs.io/en/latest/docs/str/endswith.html>
