@@ -35,6 +35,7 @@ def rule_three(text):
         new_text+= "ay" 
     return new_text
 
+
 def translate(text):
     
     if text.startswith(("ay", "xr", "yt")) or text[0].lower() in vogais:

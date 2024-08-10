@@ -1,10 +1,20 @@
 # About `lasagna.py`
 
-## Introduction
+## Table of Contents
+
+- [About `lasagna.py`](#about-lasagnapy)
+  - [Table of Contents](#table-of-contents)
+  - [01. Introduction](#01-introduction)
+  - [02. About PEP 257](#02-about-pep-257)
+    - [Examples of use](#examples-of-use)
+  - [03. Copilot Changes](#03-copilot-changes)
+  - [References](#references)
+
+## 01. Introduction
 
 This exercise has simple logic, but I'm interested in learning about the comment style in Python. I want to follow a pattern to write good comments according to a guide.
 
-## About PEP 257
+## 02. About PEP 257
 
 In general, in modules, classes, functions or methods, it is recommended that we use rEST pattern presented with the following format:
 
@@ -12,7 +22,7 @@ In general, in modules, classes, functions or methods, it is recommended that we
 - **Parameters**: List of parameters with their types and descriptions.
 - **Return**: Description of what the function returns.
 
-## Examples of use
+### Examples of use
 
 Let's present examples:
 
@@ -86,8 +96,18 @@ def my_function(parameter1, parameter2):
     pass
 ```
 
+## 03. Copilot Changes
+
+1. Correct the parameter name in the `bake_time_remaining` function.
+2. Improve the docstrings for clarity and consistency.
+3. Use the `EXPECTED_BAKE_TIME` constant in the `bake_time_remaining` function.
+
+---
+
 ## References
 
-[1] [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
+**van Rossum, G., Warsaw, B., & Coghlan, A.** (n.d.). *PEP 8 – Style Guide for Python Code*. Python Software Foundation. Retrieved from [https://peps.python.org/pep-0008/](https://peps.python.org/pep-0008/)
 
-[2] [PEP 257 – Docstring Conventions](https://peps.python.org/pep-0257/)
+**Goodger, D., & van Rossum, G.** (n.d.). *PEP 257 – Docstring Conventions*. Python Software Foundation. Retrieved from [https://peps.python.org/pep-0257/](https://peps.python.org/pep-0257/)
+
+*Note:* This content is made available to the public under the public domain, according to the guidelines of the Python Software Foundation.
